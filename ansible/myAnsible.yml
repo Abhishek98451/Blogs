@@ -1,6 +1,7 @@
 ---
   [ec2-user@ip-13.126.49.89  ~]
-- hosts: all
+- hosts: localhost
+  connection: local
   become: True
   tasks: 
    - name:

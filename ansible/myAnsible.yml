@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: localhost
   connection: local
   become: True
   tasks: 

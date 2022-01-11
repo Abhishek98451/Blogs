@@ -1,1 +1,16 @@
-
+---
+- hosts: webserver
+  become: True
+  tasks: 
+   - name:
+     yum:
+      name: "httpd"
+      state: "present"
+   - name: Start Appace Server
+     service:
+       name: httpd
+       state: started
+       enabled: True
+       copy: 
+         src: ../project
+         dest: /var/www/html/

@@ -1,5 +1,5 @@
 ---
-- name: MSTeams    
+- name: Hosting   
   hosts: webserver
   become: yes
   tasks: 

@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: webserversNew
   remote_user: ec2_user
   connection: local
   become: True

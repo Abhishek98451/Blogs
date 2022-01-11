@@ -1,6 +1,6 @@
 ---
 - name: Hosting   
-  hosts: webserver
+  hosts: webserversNew
   become: yes
   tasks: 
    - name:

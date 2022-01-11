@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  remote_user: root
+  remote_user: ec2_user
   connection: local
   become: True
   tasks: 

@@ -1,14 +1,19 @@
-- hosts: all
-gather_facts: False
-
-tasks:
-- name: install python 2
-raw: test -e /usr/bin/python || (apt -y update)
-
-- hosts: wordpress
-
-roles:
-- server
-- php
-- mysql
-- wordpress
+---
+- hosts: production
+  remote_user: ec2_user
+  connection: local
+  become: True
+  tasks: 
+   - name:
+     yum:
+      name: "httpd"
+      state: "present"
+   - name: Start Appace Server
+     service:
+       name: httpd
+       state: started
+       enabled: True
+       copy: 
+         src: ../project
+         dest: /var/www/html/
+         

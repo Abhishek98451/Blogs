@@ -5,8 +5,6 @@ job('myProject/Blogs'){
         
        shell( "ansible-playbook runsetup.yml")
     }
-    steps{
-        shell('ls')
-    }
+   
     
 }

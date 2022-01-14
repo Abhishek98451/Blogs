@@ -1,5 +1,5 @@
 folder('myProject')
-job('myProjectSeed/myProject'){
+job('myProject'){
   
     steps {
         

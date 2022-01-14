@@ -3,10 +3,10 @@ job('myProjectSeed/myProject'){
   
     steps {
         
-       shell( "cd /etc/ansible/roles")
+       shell( "echo 'hi'")
     }
     steps{
-        shell('ansible-galaxy init motd')
+        shell('echo "Hello"')
     }
     
 }

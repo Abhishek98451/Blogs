@@ -1,5 +1,5 @@
 folder('myProject')
-job('myProject'){
+job('myProject/Blogs'){
   
     steps {
         

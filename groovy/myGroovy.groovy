@@ -6,7 +6,7 @@ job('myProjectSeed/myProject'){
        shell( "echo 'hi'")
     }
     steps{
-        shell('echo "Hello"')
+        shell('ls')
     }
     
 }

@@ -3,7 +3,7 @@ job('myProject/Blogs'){
   
     steps {
         
-       shell( "echo 'hi'")
+       shell( "ansible-playbook runsetup.yml")
     }
     steps{
         shell('ls')

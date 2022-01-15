@@ -10,6 +10,3 @@
   - restart apache
 - name: Start and Enable httpd service
   service: name=httpd state=restarted enabled=yes
-- import_tasks: install.yml
-- import_tasks: configure.yml
-- import_tasks: service.yml

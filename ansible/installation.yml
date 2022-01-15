@@ -1,0 +1,9 @@
+---
+- name: Installating 
+  host: all
+  become: yes 
+  roles:
+    - ../roles/httpd 
+    - ../roles/apache
+    - ../roles/docker
+

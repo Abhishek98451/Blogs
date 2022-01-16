@@ -5,5 +5,5 @@
   roles:
     - ../roles/httpd 
     - ../roles/apache
-    - ../roles/docker
+   
 

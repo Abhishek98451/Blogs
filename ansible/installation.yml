@@ -1,9 +1,9 @@
 ---
-- name: Installating 
-  host: all
-  become: yes 
-  roles:
-    - ../roles/httpd 
-    - ../roles/apache
-   
+ - name: Installating
+   hosts: all
+   become: yes
+   roles:
+   - ../roles/httpd
+   - ../roles/apache
+
 

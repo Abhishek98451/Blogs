@@ -1,14 +1,17 @@
 ---
 # tasks file for httpd
-- name: Install httpd 
-  yum: 
+- name: Install httpd
+  yum:
     name: httpd
     state: latest
   notify: restart httpd
+- name: Create Directory
+  file:
+    path: "{dest}"
+    state: directory
 - name: Copying files
-  copy: 
+  copy:
     src: index.html
-    dest: "{dest}/index.html" 
+    dest: "{dest}/index.html"
     mode: 766
   notify: restart httpd
-  

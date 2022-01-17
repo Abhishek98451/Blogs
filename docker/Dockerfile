@@ -11,7 +11,7 @@ RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 RUN yum install -y  httpd 
 RUN yum --enablerepo=remi,remi-php55 install -y php-pear
 #copy index.php , folder assets and vendor
-COPY project /var/www/html/
+COPY Blogs/project /var/www/html/
 #Enable port 80 and 443 for appace and php
 EXPOSE 80/tcp
 EXPOSE 443/tcp

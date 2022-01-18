@@ -19,7 +19,7 @@
 - name: copy All files of Project
   copy:
     src: /home/ec2-user/Blogs
-    dest: /home/ec2-user/Blogs
+    dest: /home/ec2-user/
 
 - name: copy All files of File
   copy:
